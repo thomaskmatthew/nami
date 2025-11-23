@@ -1,0 +1,32 @@
+# Binaries (build output)
+bin/
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+
+# Build output
+/build/
+dist/
+
+# Dependency directories (if any legacy stuff)
+vendor/
+
+# Go workspace files
+go.work
+go.work.sum
+
+# IDE files
+.idea/
+.vscode/
+
+# MacOS files
+.DS_Store
+
+# Log files
+*.log
+
+# Env files
+.env
+.env.*
