@@ -40,3 +40,21 @@ func getSelectFields[T any](fields T) string {
 
 	return strings.Join(fieldsList, ", ")
 }
+
+func getValues[T any](fields T) []any {
+	v := reflect.ValueOf(fields)
+
+	if v.Kind() == reflect.Ptr {
+		v = v.Elem()
+	}
+
+	t := v.Type()
+
+	args := []any{}
+
+	for i := 0; i < t.NumField(); i++ {
+		args = append(args, v.Field(i).Interface())
+	}
+
+	return args
+}

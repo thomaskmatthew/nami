@@ -1,9 +1,9 @@
 package main
 
 import (
-	database2 "db-practice/internal/database"
-	"db-practice/internal/fetch"
 	"fmt"
+	database2 "github.com/thomaskmatthew/nami/internal/database"
+	"github.com/thomaskmatthew/nami/internal/fetch"
 )
 
 // TIP <p>To run your code, right-click the code and select <b>Run</b>.</p> <p>Alternatively, click
